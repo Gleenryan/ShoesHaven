@@ -1,12 +1,7 @@
 .header {
-
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
-
-
-
-
 }
 
 .header__nav {
@@ -26,6 +21,35 @@
 
 }
 
+.header__link {
+    display: none;
+    text-decoration: none;
+    font-size: var(--size-xs);
+    font-weight: 600;
+    color: var(--clr-light);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+
+}
+
+
+.logo {
+    font-size: var(--size-xl);
+    color: var(--clr-light);
+    /* margin-right: auto; */
+    letter-spacing: 0.05em;
+    float: left;
+    padding-top: 0.8em;
+    padding-right: 2em;
+}
+
+.header__bars {
+    color: var(--clr-lime);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+}
+
 .header__menu {
     display: flex;
     justify-content: flex-end;
@@ -36,36 +60,182 @@
 
 }
 
-.header__search {
-    width: 100%;
-
-    /* padding-right: 5rem; */
-}
-
-
-.header__link {
-    text-decoration: none;
-    font-size: var(--size-xs);
-    font-weight: 600;
-    color: var(--clr-slate600);
-    letter-spacing: -0.05em;
-    transition: color 0.3s;
-
-}
-
 .header__cart {
     display: block;
-    width: var(--size-xl);
-    height: var(--size-xl);
+    width: var(--size-lg);
+    height: var(--size-lg);
     color: var(--clr-light);
 }
 
-.logo {
-    font-size: var(--size-xl);
-    color: var(--clr-white);
-    /* margin-right: auto; */
-    letter-spacing: 0.05em;
-    float: left;
-    padding-top: 0.8em;
-    padding-right: 2em;
+.header__login {
+    display: none;
 }
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+@media (min-width: 640px) {
+
+    .header__link {
+        display: inherit;
+        text-decoration: none;
+        font-size: var(--size-xs);
+        font-weight: 600;
+        color: var(--clr-light);
+        letter-spacing: -0.05em;
+        transition: color 0.3s;
+
+    }
+
+
+    .logo {
+        font-size: var(--size-xl);
+        letter-spacing: 0.05em;
+    }
+
+    .header__bars {
+        color: var(--clr-lime);
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+        display: block;
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    .header__bars {
+        display: none;
+    }
+
+    .header__login {
+        display: flex;
+    }
+
+    .header__bars {
+        display: none;
+    }
+
+    .header {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .header__menu {
+        justify-content: flex-end;
+
+    }
+
+    .header__link {
+        text-decoration: none;
+        font-size: var(--size-xs);
+        font-weight: 600;
+        color: var(--clr-light);
+        letter-spacing: -0.05em;
+        transition: color 0.3s;
+
+    }
+
+    .logo {
+        font-size: var(--size-xl);
+        padding-top: 0.8em;
+        padding-right: 2em;
+    }
+
+    .header__list {
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    .header__list {
+        font-size: var(--size-lg);
+    }
+
+    .header {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .header__menu {
+        gap: 1.5em;
+    }
+
+    .header__link {
+        font-size: var(--size-xs);
+    }
+
+    .header__cart {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+
+    .logo {
+        font-size: var(--size-2xl);
+        padding-top: 0.6em;
+        padding-right: 2em;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .header__list {
+        font-size: var(--size-xl);
+    }
+
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header__form {
+        align-items: center;
+        flex: 1;
+        width: auto;
+        margin-top: 0.2em;
+    }
+
+    .header__menu {
+        gap: 2em;
+    }
+
+    .header__link {
+        font-size: var(--size-sm);
+    }
+
+    .header__cart {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .logo {
+        font-size: var(--size-3xl);
+        padding-top: 0.4em;
+        padding-right: 2em;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */
