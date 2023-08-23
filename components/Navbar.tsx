@@ -14,12 +14,7 @@ const Navbar = () => {
                 </div>
 
                 <ul className='header__menu'>
-                    <li className='header__list header__search'>
-                        {/* <form action="">
-                            <input type="text" />
-                        </form> */}
-                        {/* <FormInput /> */}
-                    </li>
+
                     <li className='header__list'>
                         <button className='header__cart'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
@@ -30,13 +25,22 @@ const Navbar = () => {
 
                         </button>
                     </li>
-                    <li className='header__list'>
+                    <li className='header__list header__login'>
                         <Link className='header__register btn' href='/register'>Register</Link>
                     </li>
-                    <li className='header__list'>
+                    <li className='header__list header__login'>
                         <Link className='header__login btn' href='/login'>Login</Link>
                     </li>
+                    <li className='header__list header__bars'>
+                        <button className="header__bars" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                    </li>
                 </ul>
+
 
             </nav>
         </header>
