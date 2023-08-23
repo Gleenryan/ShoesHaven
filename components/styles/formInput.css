@@ -1,0 +1,40 @@
+.form__svg {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-xl);
+    height: var(--size-xl);
+    margin-top: 1rem;
+    color: var(--clr-light);
+    margin-left: 0.4rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    color: var(--clr-white);
+
+}
+
+.input {
+
+    width: max-content;
+    background: none;
+    /* color: inherit; */
+}
+
+.MuiInputBase-input {
+    width: 100%;
+    /* Adjust the width to your desired value */
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.MuiStack-root {
+    width: 75%;
+    /* Adjust the width to your desired value */
+}

@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import styles from './page.module.css'
-
+import '../utils/utils.css'
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>haloo</h1>
+    <main className=''>
+      {/* <button className='btn'>Register</button> */}
     </main>
   )
 }
