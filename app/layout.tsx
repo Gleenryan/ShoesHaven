@@ -2,6 +2,7 @@ import { Navbar } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Dosis } from 'next/font/google'
+import { Carousels } from '@/components'
 
 const dosis = Dosis({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={dosis.className}>
         <Navbar />
+        <Carousels />
         {children}
       </body>
     </html>

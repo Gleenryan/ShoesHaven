@@ -1,8 +1,11 @@
 import FormInput from "./FormInput";
 import Navbar from "./Navbar";
-
+import Carousels from "./Carousels";
+import Card from "./Card";
 
 export {
     Navbar,
-    FormInput
+    FormInput,
+    Carousels,
+    Card
 }

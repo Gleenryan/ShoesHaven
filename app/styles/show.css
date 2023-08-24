@@ -1,0 +1,22 @@
+.show__container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+}
+
+.show__subtitle {
+    display: block;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-lime);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.show__subtitle:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+.show__card-list {
+    display: flex;
+}
