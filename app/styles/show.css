@@ -10,6 +10,8 @@
     text-decoration: underline;
     text-decoration-color: var(--clr-lime);
     transition: transform 0.3s, box-shadow 0.3s;
+    font-size: var(--size-4xl);
+    padding-bottom: 1rem;
 }
 
 .show__subtitle:hover {

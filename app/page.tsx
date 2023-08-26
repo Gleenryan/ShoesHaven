@@ -2,6 +2,7 @@ import Image from 'next/image'
 import '../utils/utils.css'
 import './styles/show.css'
 import Card from '../components/Card'
+import CardSwiper from '../components/CardSwiper'
 export default function Home() {
   return (
     <main className='section'>
@@ -9,13 +10,15 @@ export default function Home() {
         <h2 className='show__subtitle'>Trending Shoes</h2>
       </div>
       <div className="show__card-list">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <CardSwiper />
       </div>
 
+      <div className="section show__container">
+        <h2 className='show__subtitle'>Basketball Shoes</h2>
+      </div>
+      <div className="show__card-list">
+        <CardSwiper />
+      </div>
     </main>
   )
 }
