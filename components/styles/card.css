@@ -12,7 +12,7 @@
     border-radius: 10%;
     background-color: rgba(132, 204, 22, 0.5);
     color: var(--clr-light);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 
 }
 

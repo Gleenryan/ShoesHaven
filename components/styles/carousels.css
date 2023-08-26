@@ -1,5 +1,74 @@
 .carousel__img {
+    margin: auto;
     object-fit: cover;
     width: 90%;
     height: 90%;
+}
+
+.carousel__title {
+    font-size: var(--size-base);
+}
+
+.carousel__subtitle {
+    font-size: var(--size-sm);
+    display: none;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .carousel__title {
+        font-size: var(--size-xl);
+    }
+
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .carousel__title {
+        font-size: var(--size-3xl);
+    }
+
+    .carousel__subtitle {
+        display: contents;
+        font-size: var(--size-lg);
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {
+
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .carousel__title {
+        font-size: var(--size-4xl);
+    }
+
+    .carousel__subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .carousel__title {
+        font-size: var(--size-5xl);
+    }
+
+    .carousel__subtitle {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .carousel__title {
+        font-size: var(--size-6xl);
+    }
+
+    .carousel__subtitle {
+        font-size: var(--size-3xl);
+    }
 }

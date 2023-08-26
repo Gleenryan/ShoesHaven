@@ -10,7 +10,7 @@
     text-decoration: underline;
     text-decoration-color: var(--clr-lime);
     transition: transform 0.3s, box-shadow 0.3s;
-    font-size: var(--size-4xl);
+    font-size: var(--size-2xl);
     padding-bottom: 1rem;
 }
 
@@ -22,3 +22,44 @@
 .show__card-list {
     display: flex;
 }
+
+
+/* xs */
+/* @media (min-width: 475px) {
+    .show__subtitle {
+        font-size: var(--size-xl);
+    }
+} */
+
+/* sm */
+@media (min-width: 640px) {
+    .show__subtitle {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .show__subtitle {
+        font-size: var(--size-3xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .show__subtitle {
+        font-size: var(--size-4xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .show__subtitle {
+        font-size: var(--size-5xl);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */

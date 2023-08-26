@@ -20,8 +20,14 @@ const CardSwiper = () => {
                 setSlidesPerView(3);
             } else if (window.innerWidth < 768) {
                 setSlidesPerView(4);
-            } else {
+            } else if (window.innerWidth < 1024) {
                 setSlidesPerView(5);
+            } else if (window.innerWidth < 1780) {
+                setSlidesPerView(6);
+            } else if (window.innerWidth < 2084) {
+                setSlidesPerView(7);
+            } else {
+                setSlidesPerView(8);
             }
         };
 
