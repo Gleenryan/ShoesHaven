@@ -1,8 +1,10 @@
+import { Carousels } from '@/components'
 import { Footer, Navbar } from '@/components'
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Dosis } from 'next/font/google'
-import { Carousels } from '@/components'
+
 
 const dosis = Dosis({ subsets: ['latin'] })
 
@@ -18,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dosis.className}>
+      <body className={dosis.className} >
         <Navbar />
-        <Carousels />
+        {/* <Carousels /> */}
         {children}
         <Footer />
       </body>

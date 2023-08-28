@@ -1,5 +1,10 @@
 import React from 'react'
 import "./styles/card.css"
+import { ShoesProps } from '@/types';
+interface ShoesCardProps {
+    shoes: ShoesProps;
+}
+// { shoes }: ShoesCardProps
 const Card = () => {
     return (
         <div className="card">

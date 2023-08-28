@@ -4,6 +4,7 @@ import Carousels from "./Carousels";
 import Card from "./Card";
 import Swiper from "./CardSwiper";
 import Footer from "./Footer";
+import dummy from "./dummy";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     Carousels,
     Card,
     Swiper,
-    Footer
+    Footer,
+    dummy
 }

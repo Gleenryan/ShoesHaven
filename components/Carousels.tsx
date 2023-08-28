@@ -1,9 +1,12 @@
 'use client';
+
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Image from 'next/image';
 import "./styles/carousels.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 const Carousels = () => {
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex: number) => {
@@ -11,7 +14,8 @@ const Carousels = () => {
     };
 
     return (
-        <div className="section container">
+
+        <div className="section container ">
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img

@@ -1,12 +1,17 @@
-import Image from 'next/image'
+
+import { Carousels } from '@/components'
 import '../utils/utils.css'
 import './styles/show.css'
-import Card from '../components/Card'
 import CardSwiper from '../components/CardSwiper'
+
 export default function Home() {
   return (
-    <main className='section'>
-      <div className="show__container">
+    <main className=''>
+      <div className="main__carousel">
+        <Carousels />
+      </div>
+
+      <div className=" section show__container">
         <h2 className='show__subtitle'>Trending</h2>
       </div>
       <div className="show__card-list">
